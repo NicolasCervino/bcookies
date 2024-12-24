@@ -1,0 +1,24 @@
+.cta-button {
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button.primary {
+    background: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.2);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.3);
+}

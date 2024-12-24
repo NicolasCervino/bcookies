@@ -1,4 +1,5 @@
 import heroImage from '@assets/hero-1.jpeg';
+import { Button } from '@atoms';
 import './Hero.css';
 
 const Hero = () => {
@@ -25,12 +26,12 @@ const Hero = () => {
                 </div>
 
                 <div className="hero-buttons">
-                    <a href="#productos" className="cta-button primary">
+                    <Button href="#productos" variant="primary">
                         Ver Productos
-                    </a>
-                    <a href="/contacto" className="cta-button secondary">
+                    </Button>
+                    <Button href="/contacto" variant="secondary">
                         Hacer Pedido
-                    </a>
+                    </Button>
                 </div>
             </div>
             <div className="hero-image">
