@@ -1,0 +1,57 @@
+:root {
+  --color-primary: #8B4513;
+  --color-secondary: #DEB887;
+  --color-accent: #D2691E;
+  --color-background: #FFF8DC;
+  --color-primary-transparent: rgba(139, 69, 19, 0.1);
+  --color-secondary-transparent: rgba(222, 184, 135, 0.15);
+  --color-text: #2C1810;
+  --font-heading: 'Quicksand', 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-accent);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
