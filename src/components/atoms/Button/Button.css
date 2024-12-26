@@ -25,3 +25,13 @@
     background: var(--color-primary);
     color: white;
 }
+
+@media (max-width: 768px) {
+    .cta-button {
+        padding: 0.875rem 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        display: block;
+    }
+}

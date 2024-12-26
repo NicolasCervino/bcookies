@@ -63,6 +63,31 @@
 
 @media (max-width: 1024px) {
     .features-section {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding-left: 2rem;
+    }
+
+    .feature-card::before {
+        left: -2rem;
+    }
+
+    .feature-card-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .feature-card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-section {
+        padding-left: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
     }
 }
