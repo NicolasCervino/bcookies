@@ -1,3 +1,5 @@
+import './Button.css';
+
 interface ButtonProps {
     href: string;
     variant: 'primary' | 'secondary';

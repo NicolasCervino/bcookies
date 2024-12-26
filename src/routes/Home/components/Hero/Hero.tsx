@@ -1,4 +1,6 @@
-import heroImage from '@assets/hero-1.jpeg';
+import heroImage2 from '@assets/hero-2.jpg';
+import heroImage from '@assets/hero.jpg';
+import logo from '@assets/logo.png';
 import { Button } from '@atoms';
 import './Hero.css';
 
@@ -6,8 +8,10 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="hero-content">
-                <h1>BCookies</h1>
-                <p className="hero-subtitle">Cookies Artesanales</p>
+                <div className="hero-logo-container">
+                    <img src={logo} alt="BCookies" className="hero-logo" />
+                    <p className="hero-subtitle">Cookies Artesanales</p>
+                </div>
                 <p className="hero-description">Horneadas con amor en el corazón de Buenos Aires</p>
 
                 <div className="hero-features">
@@ -35,7 +39,8 @@ const Hero = () => {
                 </div>
             </div>
             <div className="hero-image">
-                <img src={heroImage} alt="Cookie artesanal BCookies" />
+                <img src={heroImage} alt="Cookie artesanal BCookies" className="hero-img-1" />
+                <img src={heroImage2} alt="Cookie artesanal BCookies" className="hero-img-2" />
             </div>
         </section>
     );

@@ -27,13 +27,20 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
+
     gap: 2rem;
 }
 
-.hero-content h1 {
-    margin: 0;
-    font-size: 3.5rem;
-    line-height: 1.2;
+.hero-logo-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-logo {
+    width: 300px;
+    height: auto;
+    margin-left: -0.5rem;
     animation: fadeInUp 0.8s ease;
 }
 
@@ -49,6 +56,7 @@
 }
 
 .hero-image {
+    position: relative;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -62,6 +70,47 @@
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 20px 40px rgba(139, 69, 19, 0.1);
+    position: absolute;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hero-img-1 {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.hero-img-2 {
+    opacity: 0;
+    transform: rotate(1deg) scale(0.98);
+}
+
+.hero-image:hover .hero-img-1 {
+    opacity: 0;
+    transform: rotate(-1deg) scale(0.98);
+}
+
+.hero-image:hover .hero-img-2 {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.hero-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.hero-image:hover::after {
+    opacity: 1;
 }
 
 .hero-features {
@@ -93,7 +142,6 @@
     gap: 1rem;
 }
 
-/* Cada feature se anima con un delay */
 .hero-feature:nth-child(1) {
     animation-delay: 0.2s;
 }
@@ -148,7 +196,8 @@
         height: 400px;
     }
 
-    .hero-image img {
+    .hero-image img,
+    .hero-image::after {
         width: 300px;
         height: 300px;
     }
