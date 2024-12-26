@@ -1,0 +1,39 @@
+.contact-cta {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    color: white;
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-cta h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-cta p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.contact-cta .cta-button {
+    background: white;
+    color: var(--color-primary);
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: var(--border-radius-sm);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.contact-cta .cta-button:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1024px) {
+    .contact-cta {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
