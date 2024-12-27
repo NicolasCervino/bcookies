@@ -1,7 +1,7 @@
 import heroImage2 from '@assets/hero-2.jpg';
 import heroImage from '@assets/hero.jpg';
 import logo from '@assets/logo.png';
-import { Button } from '@atoms';
+import { Button, ScrollIndicator } from '@atoms';
 import './Hero.css';
 
 const Hero = () => {
@@ -30,7 +30,7 @@ const Hero = () => {
                 </div>
 
                 <div className="hero-buttons">
-                    <Button href="#productos" variant="primary">
+                    <Button href="/productos" variant="primary">
                         Ver Productos
                     </Button>
                     <Button href="/contacto" variant="secondary">
@@ -42,6 +42,7 @@ const Hero = () => {
                 <img src={heroImage} alt="Cookie artesanal BCookies" className="hero-img-1" />
                 <img src={heroImage2} alt="Cookie artesanal BCookies" className="hero-img-2" />
             </div>
+            <ScrollIndicator />
         </section>
     );
 };
