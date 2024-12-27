@@ -2,7 +2,7 @@ import './Button.css';
 
 interface ButtonProps {
     href: string;
-    variant: 'primary' | 'secondary';
+    variant: 'primary' | 'secondary' | 'white';
     children: React.ReactNode;
 }
 

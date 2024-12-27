@@ -26,6 +26,18 @@
     color: white;
 }
 
+.cta-button.white {
+    background: white;
+    color: var(--color-primary);
+    padding: 1rem 2.5rem;
+    border-radius: var(--border-radius-sm);
+}
+
+.cta-button.white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
     .cta-button {
         padding: 0.875rem 1.5rem;
