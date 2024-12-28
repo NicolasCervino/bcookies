@@ -12,12 +12,14 @@
     margin: 0 auto;
     padding: 0.5rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;
+    gap: 2rem;
 }
 
 .navbar-brand {
+    margin-right: auto;
     display: flex;
     align-items: center;
 }

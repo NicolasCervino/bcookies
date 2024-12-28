@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/b-logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
+    const isHome = location.pathname === '/';
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -13,9 +15,11 @@ const Navbar = () => {
     return (
         <header className="navbar">
             <div className="navbar-container">
-                <Link to="/" className="navbar-brand">
-                    <img src={logo} alt="BCookies" className="navbar-logo" />
-                </Link>
+                {!isHome && (
+                    <Link to="/" className="navbar-brand">
+                        <img src={logo} alt="BCookies" className="navbar-logo" />
+                    </Link>
+                )}
                 <button
                     className={`hamburger ${isMenuOpen ? 'active' : ''}`}
                     onClick={toggleMenu}
