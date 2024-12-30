@@ -1,3 +1,4 @@
+import { DecoratedSection } from '@styled';
 import './Products.css';
 
 interface Product {
@@ -75,20 +76,13 @@ const Products = () => {
                     </div>
                 ))}
             </div>
-            <div className="products-footer">
-                <div className="products-footer-content">
-                    <h2>¿Listo para ordenar?</h2>
-                    <p>Haz tu pedido ahora por WhatsApp</p>
-                    <div className="products-footer-buttons">
-                        <a href="https://wa.me/TUNUMERO" className="cta-button primary">
-                            Hacer Pedido
-                        </a>
-                    </div>
-                </div>
-                <div className="products-footer-decoration">
-                    <span>🍪</span>
-                </div>
-            </div>
+            <DecoratedSection
+                title="¿Listo para ordenar?"
+                description="Haz tu pedido ahora por WhatsApp"
+                buttonText="Hacer Pedido"
+                buttonHref="https://wa.me/TUNUMERO"
+                buttonVariant="primary"
+            />
         </div>
     );
 };
