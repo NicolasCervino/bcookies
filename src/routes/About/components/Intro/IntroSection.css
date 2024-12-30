@@ -1,0 +1,35 @@
+.about-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 4px 20px rgba(139, 69, 19, 0.15);
+}
+
+.about-text {
+    padding-right: 0;
+}
+
+.about-text h2 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
