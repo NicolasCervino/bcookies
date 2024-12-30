@@ -1,5 +1,6 @@
 import { DecoratedSection } from '@styled';
 import './Products.css';
+import ProductCard from './components/ProductCard/ProductCard';
 
 interface Product {
     name: string;
@@ -67,13 +68,7 @@ const Products = () => {
             </div>
             <div className="products-grid">
                 {products.map((product, index) => (
-                    <div key={index} className="product-card">
-                        <div className="product-content">
-                            <h3>{product.name}</h3>
-                            <p className="product-description">{product.description}</p>
-                            <span className="product-price">{product.price}</span>
-                        </div>
-                    </div>
+                    <ProductCard key={index} product={product} />
                 ))}
             </div>
             <DecoratedSection
