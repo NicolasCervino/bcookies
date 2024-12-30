@@ -1,7 +1,7 @@
 import cookies from '@assets/cookies.jpg';
 import ingredients from '@assets/ingredients.jpg';
 import packaging from '@assets/packaging.jpeg';
-import { Button } from '@atoms';
+import { DecoratedSection } from '@styled';
 import Hero from './components/Hero/Hero';
 import WhyChoose from './components/WhyChoose/WhyChoose';
 import './Home.css';
@@ -35,20 +35,13 @@ const Home = () => {
         <div className="home">
             <Hero />
             <WhyChoose features={features} featuredProducts={featuredProducts} />
-            <div className="home-about-preview">
-                <span className="home-about-decoration">🍪</span>
-                <div className="home-about-content">
-                    <h2>Conoce Nuestra Historia</h2>
-                    <p>
-                        Descubre cómo nació BCookies y por qué nos apasiona crear las mejores
-                        cookies artesanales de Buenos Aires
-                    </p>
-                    <Button href="/nosotros" variant="primary">
-                        Conocer Más
-                    </Button>
-                </div>
-                <span className="home-about-decoration">🍪</span>
-            </div>
+            <DecoratedSection
+                title="Conoce Nuestra Historia"
+                description="Descubre cómo nació BCookies y por qué nos apasiona crear las mejores cookies artesanales de Buenos Aires"
+                buttonText="Conocer Más"
+                buttonHref="/nosotros"
+                buttonVariant="primary"
+            />
         </div>
     );
 };

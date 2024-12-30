@@ -27,7 +27,8 @@
         "paths": {
             "@assets/*": ["src/assets/*"],
             "@routes/*": ["src/routes/*"],
-            "@atoms": ["src/components/atoms"]
+            "@atoms": ["src/components/atoms"],
+            "@styled": ["src/components/styled"]
         }
     },
     "include": ["src"]
