@@ -18,35 +18,33 @@ export const TeamSection = () => {
     ];
 
     return (
-        <div className="section-container">
-            <div className="team-content">
-                <div className="team-intro">
-                    <div className="team-intro-text">
-                        <h2>Un Equipo Apasionado</h2>
-                        <p>
-                            Somos Kelly y Sergio, dos apasionados por la repostería que decidimos
-                            convertir nuestro amor por las cookies en algo más que un hobby.
-                        </p>
-                        <p>
-                            Juntos, combinamos la creatividad culinaria con la visión empresarial
-                            para traerte las mejores cookies artesanales de Buenos Aires.
-                        </p>
-                        <div className="team-members-grid">
-                            {teamMembers.map((member, index) => (
-                                <div key={index} className="team-member">
-                                    <div className="team-member-info">
-                                        <h3>{member.name}</h3>
-                                        <span className="member-role">{member.role}</span>
-                                        <p>{member.description}</p>
-                                    </div>
-                                </div>
-                            ))}
+        <div className="team-section">
+            <h2>Un Equipo Apasionado</h2>
+            <div className="team-intro">
+                <div className="team-photo-container">
+                    <img src={teamPhoto} alt="Equipo BCookies" className="team-photo" />
+                </div>
+                <div className="team-intro-text">
+                    <p>
+                        Somos Kelly y Sergio, dos apasionados por la repostería que decidimos
+                        convertir nuestro amor por las cookies en algo más que un hobby.
+                    </p>
+                    <p>
+                        Juntos, combinamos la creatividad culinaria con la visión empresarial para
+                        traerte las mejores cookies artesanales de Buenos Aires.
+                    </p>
+                </div>
+            </div>
+            <div className="team-members-container">
+                {teamMembers.map((member, index) => (
+                    <div key={index} className="team-member">
+                        <div className="team-member-info">
+                            <h3>{member.name}</h3>
+                            <span className="member-role">{member.role}</span>
+                            <p>{member.description}</p>
                         </div>
                     </div>
-                    <div className="team-photo-container">
-                        <img src={teamPhoto} alt="Equipo BCookies" className="team-photo" />
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );
