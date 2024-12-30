@@ -12,6 +12,7 @@ export default defineConfig({
             '@routes': path.resolve(__dirname, './src/routes'),
             '@atoms': path.resolve(__dirname, './src/components/atoms'),
             '@styled': path.resolve(__dirname, './src/components/styled'),
+            '@styles': path.resolve(__dirname, './src/styles'),
         },
     },
 });

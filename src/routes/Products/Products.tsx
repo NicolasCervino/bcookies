@@ -1,4 +1,5 @@
 import { DecoratedSection } from '@styled';
+import '@styles/animations.css';
 import './Products.css';
 import ProductCard from './components/ProductCard/ProductCard';
 
