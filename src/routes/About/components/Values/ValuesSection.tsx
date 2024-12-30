@@ -6,20 +6,22 @@ const ValuesSection = () => {
             icon: '🎨',
             title: 'Creatividad',
             description:
-                'Innovamos constantemente para crear sabores únicos y experiencias memorables',
-            color: 'var(--color-accent)',
+                'Innovamos constantemente para crear sabores únicos y experiencias memorables.',
+            color: 'var(--color-primary)',
         },
         {
             icon: '⭐',
             title: 'Calidad',
-            description: 'Utilizamos los mejores ingredientes para garantizar el mejor sabor',
+            description:
+                'Seleccionamos los mejores ingredientes para garantizar un sabor excepcional.',
             color: 'var(--color-primary)',
         },
         {
-            icon: '💝',
+            icon: '🤍',
             title: 'Pasión',
-            description: 'Cada cookie está hecha con amor y dedicación para nuestros clientes',
-            color: '#e74c3c',
+            description:
+                'Cada cookie está hecha con dedicación y amor por la repostería artesanal.',
+            color: 'var(--color-primary)',
         },
     ];
 
