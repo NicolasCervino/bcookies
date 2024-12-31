@@ -123,4 +123,25 @@
     .decorated-section-decoration {
         font-size: 6rem;
     }
+
+    .decorated-section-decoration:first-child {
+        display: none;
+    }
+
+    .decorated-section-decoration:last-child {
+        display: none;
+    }
+
+    .decorated-section-content::before,
+    .decorated-section-content::after {
+        font-size: 10rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: auto;
+        rotate: 0deg;
+    }
+
+    .decorated-section-content::after {
+        display: none;
+    }
 }
