@@ -26,3 +26,26 @@
     font-weight: 600;
     transition: transform 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    .contact-cta {
+        padding: 1.5rem;
+    }
+
+    .contact-cta h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .contact-cta p {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .contact-cta .cta-button {
+        width: auto;
+        padding: 0.875rem 2rem;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}

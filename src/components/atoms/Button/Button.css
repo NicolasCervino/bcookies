@@ -46,9 +46,15 @@
 @media (max-width: 768px) {
     .cta-button {
         padding: 0.875rem 1.5rem;
-        width: 100%;
+        width: auto;
+        min-width: unset;
+        max-width: 100%;
         box-sizing: border-box;
         text-align: center;
-        display: block;
+        display: inline-block;
+    }
+
+    .cta-button.white {
+        padding: 0.875rem 1.5rem;
     }
 }

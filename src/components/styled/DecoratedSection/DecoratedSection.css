@@ -103,18 +103,24 @@
 @media (max-width: 768px) {
     .decorated-section {
         margin: 2rem 1rem;
-        padding: 3rem 1.5rem;
+        padding: 4rem 1.5rem;
+    }
+
+    .decorated-section-content {
+        gap: 1.5rem;
     }
 
     .decorated-section h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
     }
 
     .decorated-section p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
 
     .decorated-section-decoration {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 }
