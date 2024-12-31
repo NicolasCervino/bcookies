@@ -1,4 +1,3 @@
-import { PHONE_NUMBER } from '@constants/contact-information';
 import { BrowserRouter } from 'react-router-dom';
 import { WhatsAppButton } from './components/atoms';
 import Footer from './components/layout/Footer';
@@ -14,7 +13,7 @@ function App() {
                     <Router />
                 </main>
                 <Footer />
-                <WhatsAppButton phoneNumber={PHONE_NUMBER} />
+                <WhatsAppButton />
             </div>
         </BrowserRouter>
     );
