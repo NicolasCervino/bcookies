@@ -13,6 +13,7 @@ export default defineConfig({
             '@atoms': path.resolve(__dirname, './src/components/atoms'),
             '@styled': path.resolve(__dirname, './src/components/styled'),
             '@styles': path.resolve(__dirname, './src/styles'),
+            '@constants': path.resolve(__dirname, './src/constants'),
         },
     },
 });

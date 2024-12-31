@@ -29,7 +29,8 @@
             "@routes/*": ["src/routes/*"],
             "@atoms": ["src/components/atoms"],
             "@styled": ["src/components/styled"],
-            "@styles": ["src/styles"]
+            "@styles": ["src/styles"],
+            "@constants/*": ["src/constants/*"]
         }
     },
     "include": ["src"]

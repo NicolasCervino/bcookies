@@ -26,14 +26,3 @@
     font-weight: 600;
     transition: transform 0.3s ease;
 }
-
-.contact-cta .cta-button:hover {
-    transform: translateY(-3px);
-}
-
-@media (max-width: 1024px) {
-    .contact-cta {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}

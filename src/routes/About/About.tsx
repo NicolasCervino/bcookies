@@ -3,6 +3,7 @@ import './About.css';
 import { IntroSection } from './components/Intro/IntroSection';
 import { TeamSection } from './components/Team/TeamSection';
 import ValuesSection from './components/Values/ValuesSection';
+import { PHONE_NUMBER_URL } from '@constants/contact-information';
 
 const About = () => {
     return (
@@ -25,7 +26,7 @@ const About = () => {
                     title="¿Listo para probar nuestras cookies?"
                     description="Haz tu pedido ahora y disfruta de nuestras deliciosas cookies artesanales hechas con amor"
                     buttonText="Hacer Pedido"
-                    buttonHref="https://wa.me/TUNUMERO"
+                    buttonHref={PHONE_NUMBER_URL}
                     buttonVariant="primary"
                 />
             </div>

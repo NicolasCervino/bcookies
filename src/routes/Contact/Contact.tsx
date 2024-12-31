@@ -1,3 +1,4 @@
+import { PHONE_NUMBER_URL } from '@constants/contact-information';
 import { DecoratedSection } from '@styled';
 import './Contact.css';
 import LocationSection from './components/Location/LocationSection';
@@ -5,10 +6,6 @@ import ScheduleSection from './components/Schedule/ScheduleSection';
 
 const Contact = () => {
     const contactInfo = {
-        instagram: '@bcookies.ba',
-        instagramUrl: 'https://instagram.com/bcookies.ba',
-        whatsapp: '+54 9 11 1234-5678',
-        whatsappUrl: 'https://wa.me/TUNUMERO',
         locations: [
             {
                 name: 'Martes',
@@ -54,7 +51,7 @@ const Contact = () => {
                 title="¿Listo para ordenar?"
                 description="Hacé tu pedido ahora por WhatsApp"
                 buttonText="Hacer Pedido"
-                buttonHref={contactInfo.whatsappUrl}
+                buttonHref={PHONE_NUMBER_URL}
                 buttonVariant="primary"
             />
         </div>

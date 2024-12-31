@@ -1,3 +1,4 @@
+import { PHONE_NUMBER_URL } from '@constants/contact-information';
 import { DecoratedSection } from '@styled';
 import '@styles/animations.css';
 import './Products.css';
@@ -76,7 +77,7 @@ const Products = () => {
                 title="¿Listo para ordenar?"
                 description="Haz tu pedido ahora por WhatsApp"
                 buttonText="Hacer Pedido"
-                buttonHref="https://wa.me/TUNUMERO"
+                buttonHref={PHONE_NUMBER_URL}
                 buttonVariant="primary"
             />
         </div>

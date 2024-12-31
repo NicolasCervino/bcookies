@@ -1,3 +1,5 @@
+import { Button } from '@atoms';
+import { PHONE_NUMBER_URL } from '@constants/contact-information';
 import './contact.css';
 
 const Contact = () => {
@@ -5,9 +7,9 @@ const Contact = () => {
         <div className="contact-cta">
             <h3>¿Listo para ordenar?</h3>
             <p>Haz tu pedido ahora y disfruta de nuestras deliciosas cookies</p>
-            <a href="/contacto" className="cta-button primary">
+            <Button href={PHONE_NUMBER_URL} variant="white">
                 Hacer Pedido
-            </a>
+            </Button>
         </div>
     );
 };
