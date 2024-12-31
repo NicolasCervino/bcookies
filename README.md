@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# BCookies - Artisanal Cookies Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based website for BCookies, showcasing artisanal cookies made in Buenos Aires, Argentina.
 
-Currently, two official plugins are available:
+## 🍪 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+BCookies is a small business dedicated to creating delicious artisanal cookies. This website serves as their digital storefront, allowing customers to:
 
-## Expanding the ESLint configuration
+-   Browse their product catalog
+-   Learn about their story and values
+-   Find their physical locations
+-   Place orders via WhatsApp
+-   Check business hours and contact information
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![image](https://github.com/user-attachments/assets/db908dc2-925d-462d-9614-d0202d5a8690)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Technologies
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+-   React 18
+-   TypeScript
+-   Vite
+-   React Router DOM
+-   FontAwesome Icons
+-   CSS Modules
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🛠️ Setup
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository
+2. Install dependencies
+3. Run development server
+4. Build for production
+
+## 🎨 Features
+
+-   Responsive design for all devices
+-   Modern and clean UI
+-   Optimized images and assets
+-   SEO-friendly structure
+-   Fast loading times with Vite
+-   WhatsApp integration for orders
+-   Interactive location maps
+-   Business hours display
+-   Product catalog
+
+## 🖼️ Live Demo
+
+Check out the live website: https://bcookies.vercel.app/
+
+## 📄 License
+
+This project is private and proprietary. All rights reserved.
