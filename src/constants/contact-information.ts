@@ -1,5 +1,8 @@
 const PHONE_NUMBER = '541166385047';
-const PHONE_NUMBER_URL = `https://wa.me/${PHONE_NUMBER}`;
+const DEFAULT_MESSAGE = '¡Hola! Me gustaría hacer un pedido de cookies 🍪';
+const PHONE_NUMBER_URL = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(
+    DEFAULT_MESSAGE
+)}`;
 const DISPLAY_PHONE_NUMBER = '+54 11 6638-5047';
 const INSTAGRAM_URL = 'https://www.instagram.com/bcookies.arg/';
 
