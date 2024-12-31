@@ -33,3 +33,29 @@
     color: var(--color-text);
     margin-bottom: 1.5rem;
 }
+
+@media (max-width: 968px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image img {
+        max-height: 300px;
+        width: 100%;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
