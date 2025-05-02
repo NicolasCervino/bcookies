@@ -1,60 +1,25 @@
+import { useState } from 'react';
 import { PHONE_NUMBER_URL } from '@constants/contact-information';
 import { DecoratedSection } from '@styled';
 import '@styles/animations.css';
 import './Products.css';
-import ProductCard from './components/ProductCard/ProductCard';
-
-interface Product {
-    name: string;
-    description: string;
-    price: string;
-    category?: string;
-}
+import AccordionItem from './components/AccordionItem/AccordionItem';
+import { productUtils } from './utils';
 
 const Products = () => {
-    const products: Product[] = [
-        {
-            name: 'Mini Crunchy Cookies',
-            description: 'Mix 100 gr de todas nuestras cookies en versión mini',
-            price: '$2500',
-        },
-        {
-            name: 'Classic Cookies',
-            description: 'Chips de chocolate blanco y con leche',
-            price: '$2000',
-        },
-        {
-            name: 'Chocotorta',
-            description: 'Topping de chocolinas y relleno de mousse de dulce de leche',
-            price: '$2500',
-        },
-        {
-            name: 'Bombón Milka Oreo',
-            description: 'Topping de galletas oreo y relleno de bombón milka oreo',
-            price: '$3500',
-        },
-        {
-            name: 'Nutribanana',
-            description: 'Topping de nuez, chips de chocolate, banana y avena',
-            price: '$3000',
-        },
-        {
-            name: 'Key Lime Pie',
-            description: 'Topping de chocolate blanco rallado y crema de lima',
-            price: '$3500',
-        },
-        {
-            name: 'Cheesecake de frutos rojos',
-            description:
-                'Topping de chips de chocolate blanco y relleno con cheesecake de frutos rojos',
-            price: '$3000',
-        },
-        {
-            name: 'Nutella',
-            description: 'Topping de chips de chocolate y relleno con pasta de avellanas',
-            price: '$3500',
-        },
-    ];
+    const categories = Object.keys(productUtils.productsByCategory);
+    const firstCategory = categories.length > 0 ? categories[0] : null;
+
+    const [openCategories, setOpenCategories] = useState<Record<string, boolean>>(() => {
+        return firstCategory ? { [firstCategory]: true } : {};
+    });
+
+    const onCategoryToggle = (categoryName: string) => {
+        setOpenCategories(prev => ({
+            ...prev,
+            [categoryName]: !prev[categoryName]
+        }));
+    };
 
     return (
         <div className="products-container">
@@ -68,11 +33,19 @@ const Products = () => {
                     <span>🍪</span>
                 </div>
             </div>
-            <div className="products-grid">
-                {products.map((product, index) => (
-                    <ProductCard key={index} product={product} />
+
+            <div className="accordion-container">
+                {Object.entries(productUtils.productsByCategory).map(([category, categoryProducts]) => (
+                    <AccordionItem
+                        key={category}
+                        category={category}
+                        products={categoryProducts}
+                        isOpen={openCategories[category] || false}
+                        onToggle={onCategoryToggle}
+                    />
                 ))}
             </div>
+
             <DecoratedSection
                 title="¿Listo para ordenar?"
                 description="Haz tu pedido ahora por WhatsApp"
